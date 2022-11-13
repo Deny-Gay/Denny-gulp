@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'mixins';
+@import 'functions';
+@import 'fonts';
+@import 'settings';
+@import 'resetting';
+@import 'components';
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  align-self: start;
+}
+
+
+@import './partials/header.scss';
+
+@import './partials/footer.scss';
