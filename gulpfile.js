@@ -118,7 +118,10 @@ const svgSprites = () => {
 }
 
 const styles = () => {
-  return src(['./src/scss/**/*.scss', './src/scss/**/*.css'])
+  src('./src/scss/libs-css/*.css')
+  .pipe(dest('./app/css/libs-css/'))
+
+  return src('./src/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'expanded'
